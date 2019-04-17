@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+/*  Top nav start */
+.top-nav{
+    background-color: #021e4b !important;
+    
+}
+
+
+/* Top nav ends */
+
+/* Main section starts */
+
+.main-row{
+    background-color: #021e4b;
+    color: #4889cb;
+    text-align: center;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 576px){
+    .main-row a{
+        font-size: 10px !important;
+       
+    }
+}
+.main-row p{
+    margin-top: 20px;
+   
+}
+
+.main-row p a{
+    
+    text-decoration: none;
+    color: #4889cb;
+}
+.main-row p a:hover{
+    
+   
+    color: white;
+}
+
+.active{
+    color: white !important;
+}
+
+.main-form{
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.add-icon{
+    color: #008ace;
+    width: 24px !important;
+    height: 24px !important;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.add{
+    width:400px;
+    color:#008ace;
+    margin-bottom: 40px;
+}
+
+.add h4{
+    cursor: pointer;
+}
+
+.main-row-2{
+    margin-bottom: 40px;
+}
+.center-btn{
+    text-align: center;
+}
+
+.update-btn{
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 0px !important;
+    background-color:#021e4b  !important;
+    color: white
+}
+
+.add-2{
+    width:400px;
+    color:#008ace;
+    margin-top: 30px;
+}
+
+.add-2 h4{
+    cursor: pointer;
+}
+
+
+/* Main section ends */
+
+/* Reviews column */
+
+.reviews-column{
+    background-color:  #008ace;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 40px;
+}
+
+.reviews-column p{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.minus-icon{
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.r-one{
+    margin-top: 20px;
+}
+
+.view-more{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.view-more a{
+    text-decoration: none !important;
+    color: #008ace !important;
+}
+
+.left-review{
+    margin-top: 40px;
+}
+
+.mins{
+    margin-left: 200px;
+}
+
+@media only screen and (max-width:576px){
+    .mins{
+        margin-left: 240px;
+    }
+}
+
+
+
+/* when a user is filling this blank, the placeholder text pops up here. */
+
+.group1{ 
+  position:relative; 
+  margin-bottom:45px; 
+}
+.input-material{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:100%;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+.input-material:focus{ 
+    outline:none; 
+}
+
+
+.lab1{
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+.input-material:focus ~ label, .input-material:valid ~ label {
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+
+.bar{ 
+    position:relative; 
+    display:block; 
+    width:100%; 
+}
+.bar:before, .bar:after {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+.input-material:focus ~ .bar:before, .input-material:focus ~ .bar:after {
+  width:50%;
+}
+
+
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+.input-material:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+  
+
+
+  .input-material1:focus 		{ outline:none; }
+
+  .input-material1:focus ~ label, .input-material1:valid ~ label 		{
+    top:-20px;
+    font-size:14px;
+    color:#5264AE;
+  }
+
+  /* active state */
+.input-material1:focus ~ .bar:before, .input-material1:focus ~ .bar:after {
+    width:50%;
+  }
+
+  /* active state */
+.input-material1:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+  } */
+
+
+  .input-material:focus ~ .bar:before, .input-material:focus ~ .bar:after {
+    width:50%;
+  } 
